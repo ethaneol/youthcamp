@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="room2.css">
+  <link rel="stylesheet" href="room.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <body>
+    <style>
+      /* Hide the content initially */
+      #content {
+          display: none;
+      }
+    </style>
+</head>
+<body onload="checkPassword()">
+
+<script type="text/javascript">
+  // Function to prompt for password
+  function checkPassword() {
+      var password = prompt("Enter the password to access this page:");
+
+      // Set the correct password
+      var correctPassword = "181224";
+
+      if (password === correctPassword) {
+          // If password is correct, show the content
+          document.getElementById('content').style.display = 'block';
+      } else {
+          // If password is incorrect, redirect to another page or show an alert
+          alert("Its not time yet hehe.");
+          window.location.href = "Home_Page.html"; // Redirect or close the page
+      }
+  }
+</script>
+
+<!-- Hide this content until the correct password is entered -->
+<div id="content">
+    <!-- Your current HTML content goes here -->
+    <div class="top1">
+      <div class="bar1">
+        <a href="Home_Page.html"><img src="logo.jpg" alt="" class="button2"></a>
+        <!-- Float links to the right. Hide them on small screens -->
+        <div class="rights1">
+          <a href="Home_Page.html" class="button1">About</a>
+          <a href="Timetable.html" class="button1">Timetable</a>
+          <a href="#" class="button1">Secret</a>
+        </div>
+      </div>
+    </div>
+    <br>
+<br>
+<br>
+<br>
+<br>
+<br><section class="video-section">
+  <h2>Watch Our Video</h2>
+  <video width="100%" controls>
+    <source src="Videos/secret.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+<br>
+<br>
+<br>
+
+    
+
+    <footer class="footer">
+      <h3>We cant wait to see you at camp!</h3>
+      <p>Back to the <a href="#header">Top?</a></p>
+     <br>
+     <div class="media-icons">
+       <a href="https://www.instagram.com/blazeseekers/?utm_source=ig_web_button_share_sheet"><i class="fab fa-facebook-f"></i></a>
+       <a href="https://www.instagram.com/blazeseekers/?utm_source=ig_web_button_share_sheet"><i class="fab fa-twitter"></i></a>
+       <a href="https://www.instagram.com/blazeseekers/?utm_source=ig_web_button_share_sheet"><i class="fab fa-instagram"></i></a>
+     </div>
+   </footer>
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="room2.css">
+    <link rel="stylesheet" href="room.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+
+
+
+<body>
+  <div class="top1">
+    <div class="bar1">
+      <a href="#header"><img src="logo.png" alt="" class="button2"></a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="rights1">
+        <a href="Tools.html" class=" button1">Tools</a>
+        <a href="#about" class="button1">About</a>
+        <a href="contactpage.html" class="button1">Contact Page</a>
+      </div>
+
+    </div>
+  </div>
+
+    <div class="results">
+
+    <h1>You Have Sucessfully Submitted the Form</h1>
+    <h2>Check your registration: </h2>
+    <ul>
+      <li>Your Name is :<span id="name"></span></li>
+      <li>Your Email is: <span id='email'></span></li>
+      <li>Your Course is: <span id='option'></span></li>
+      <li>Your Timing is: <span id='option1'></span></li>
+    </ul>
+
+
+          <p>
+          <button class="button_submit"><a href="Home_Page.html">Go Back to Home Page!</a></button></p>
+  </div>
+
+
+
+    <script type="text/javascript">
+      document.getElementById('name').innerHTML=localStorage.getItem("namevalue");
+      document.getElementById('email').innerHTML=localStorage.getItem("emailvalues");
+      document.getElementById('option').innerHTML=localStorage.getItem("optionvalue");
+      document.getElementById('option1').innerHTML=localStorage.getItem("optionvalue1");
+    </script>
+  </body>
+  <br>
+  <footer class="footer">
+    <h3>Thank You for Visiting Our Page</h3>
+    <br>
+   <span class="footer-title">Done By:</span>
+   <p class="copyright-text">Cham Xun Xian Samuel (211836L)</p>
+   <br>
+   <div class="media-icons">
+     <a href="https://www.facebook.com/nanyangpoly/"><i class="fab fa-facebook-f"></i></a>
+     <a href="https://twitter.com/nyptweets?s=20"><i class="fab fa-twitter"></i></a>
+     <a href="https://www.instagram.com/nanyangpoly/?hl=en"><i class="fab fa-instagram"></i></a>
+   </div>
+ </footer>
+
+</html>

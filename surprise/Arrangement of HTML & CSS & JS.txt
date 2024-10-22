@@ -1,5 +1,5 @@
 Page 1
-HTML: Home_Page.html & formsub.html
+HTML: index.html & formsub.html
 CSS: room.css & room2.css (headers for all pages)
 
 Page 2

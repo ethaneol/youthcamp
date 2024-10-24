@@ -36,7 +36,108 @@
 
 <h2>Camp Schedule</h2>    
 <img src="schedule/sc.png" style="max-width:100%; height:auto;">
-      
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<title>Packing List</title>
+<style>
+ 
+  
+  .accordion {
+    background-color: #f1f1f1;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .checklist {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .checklist li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .checklist input[type="checkbox"] {
+    margin-right: 10px;
+  }
+</style>
+</head>
+<body>
+
+<h2>Packing List</h2>
+
+<!-- Accordion for Clothing -->
+<button class="accordion">Clothing</button>
+<div class="panel">
+<ul class="checklist">
+  <li><input type="checkbox"> T-Shirts</li>
+  <li><input type="checkbox"> Jeans</li>
+  <li><input type="checkbox"> Jacket</li>
+  <li><input type="checkbox"> Comfortable Shoes</li>
+</ul>
+</div>
+
+<!-- Accordion for Toiletries -->
+<button class="accordion">Toiletries</button>
+<div class="panel">
+<ul class="checklist">
+  <li><input type="checkbox"> Toothbrush</li>
+  <li><input type="checkbox"> Toothpaste</li>
+  <li><input type="checkbox"> Shampoo</li>
+  <li><input type="checkbox"> Soap</li>
+</ul>
+</div>
+
+<!-- Accordion for Outdoor Gear -->
+<button class="accordion">Outdoor Gear</button>
+<div class="panel">
+<ul class="checklist">
+  <li><input type="checkbox"> Flashlight</li>
+  <li><input type="checkbox"> Water Bottle</li>
+  <li><input type="checkbox"> Sunscreen</li>
+  <li><input type="checkbox"> Hat</li>
+</ul>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+for (var i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>     
 
 </body>
 
